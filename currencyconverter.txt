@@ -1,0 +1,14 @@
+#CURRENCY CONVERTER
+
+rupee=int(input("enter indian rupees to be converted: "))
+print("choose 0 to convert into pounds\nchoose 1 to convert into euros\nchoose 2 to convert into us dollars\nchoose 3 to convert into canadian dollars\nchoose 4 to convert into chinese yaun\nchoose 5 to convert into russian rubal\nchoose 6 to convert into japaneseyen\n")
+pounds=str(rupee*0.011)+" pounds"
+euros=str(rupee*0.012)+" euros"
+usdollars=str(rupee*0.012)+" dollars"
+canadiandollars=str(rupee*0.016)+" canadian dollars"
+chineseyuan=str(rupee*0.088)+" chinese yuan"
+russianruble=str(rupee*0.74)+" russian ruble"
+japaneseyen=str(rupee*1.72)+" japanese yen"
+choice=int(input(">>"))
+convert=[pounds,euros,usdollars,canadiandollars,chineseyuan,russianruble,japaneseyen]
+print(convert[choice])
